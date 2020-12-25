@@ -3,19 +3,6 @@ var using = require("jasmine-data-provider");
 var loginPageObj = require("./Pages/LoginPage");
 var shopPageObj = require("./Pages/ShopPage.js");
 
-describe("test", () => {
-  it("test", async () => {
-    let count1, count2;
-    browser.get("https://about.google/intl/en/commitments/reports/");
-    browser.sleep(4000);
-    var notifications = element.all(by.xpath("//a"));
-    count1 = notifications.count();
-    console.log(count1);
-    // var notifications = element.all(by.xpath("//a"));
-    // count2 = notifications.count();
-    expect(count1).toBe(562.5714285714286);
-  });
-});
 describe("Real time project automation", function () {
   using(dataObject.Datadriven, function (data, description) {
     it("should test automation", function () {
